@@ -10,7 +10,8 @@ Build-Depends: debhelper (>= 9), m4,
  libghc-network-dev, libcurl4-gnutls-dev, libghc-parallel-dev,
  libghc-utf8-string-dev, libghc-deepseq-dev, libghc-hslogger-dev,
  libghc-crypto-dev, libghc-text-dev, libghc-hinotify-dev,
- libghc-regex-pcre-dev, libghc-attoparsec-dev, libghc-vector-dev, libpcre3-dev,
+ libghc-regex-pcre-dev, libghc-attoparsec-dev, libghc-vector-dev,
+ libghc-base64-bytestring-dev, libpcre3-dev,
  python-simplejson, python-pyparsing, python-openssl, python-bitarray,
  python-support (>= 0.6), python-pyinotify, python-pycurl,
  python-paramiko, python-ipaddr, python-sphinx (>= 1.0.7+dfsg), graphviz,
@@ -39,8 +40,8 @@ Depends: ganeti-#VER# (= ${source:Version}),
  adduser, ${misc:Depends}
 Recommends: drbd8-utils (>= 8.0.7), qemu-kvm |
  xen-linux-system-amd64 | xen-linux-system-686-pae,
- ganeti-instance-debootstrap, ndisc6
-Suggests: ganeti-doc, blktap-dkms, molly-guard
+ ndisc6
+Suggests: ganeti-doc, blktap-dkms, molly-guard, ganeti-instance-debootstrap
 Conflicts: ganeti-htools
 Provides: ${python:Provides}, ganeti-htools
 Description: Cluster-based virtualization management software
