@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Debian Ganeti Team <pkg-ganeti-devel@lists.alioth.debian.org>
 Uploaders: Guido Trotter <ultrotter@debian.org>,
  Apollon Oikonomopoulos <apoikos@debian.org>
-Build-Depends: debhelper (>= 9), m4,
+Build-Depends: debhelper (>= 9), m4, pandoc,
  python-all, ghc (>= 6.12), ghc-ghci,
  libghc-curl-dev, libghc-json-dev, libghc-snap-server-dev,
  libghc-network-dev, libcurl4-gnutls-dev, libghc-parallel-dev,
