@@ -919,7 +919,8 @@ class XenHypervisor(hv_base.BaseHypervisor):
     @param target: target host (usually ip), on this node
 
     """
-    pass
+    config = StringIO()
+    self._WriteNicConfig(config, instance, instance.hvparams)
 
   def FinalizeMigrationDst(self, instance, info, success):
     """Finalize an instance migration.

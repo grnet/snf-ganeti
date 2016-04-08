@@ -268,7 +268,8 @@ class ExtStorageDevice(base.BlockDev):
       snap_size = self.size
 
     _ExtStorageAction(constants.ES_ACTION_SNAPSHOT, self.unique_id,
-                      self.ext_params, snap_name=snap_name, snap_size=snap_size)
+                      self.ext_params, name=self.name, snap_name=snap_name,
+                      snap_size=snap_size)
 
     return (provider, snap_name)
 
