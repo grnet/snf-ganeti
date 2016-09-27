@@ -1,3 +1,9 @@
+snf-ganeti (2.10.7.1+grnet2+bpo2-2~jessie) jessie; urgency=low
+
+  * Recompile package for jessie
+
+ -- Nikos Skalkotos <skalkoto@grnet.gr>  Tue, 27 Sep 2016 14:30:33 +0300
+
 snf-ganeti (2.10.7.1+grnet2+bpo2-1~wheezy) wheezy; urgency=low
 
   * Some small fixes
